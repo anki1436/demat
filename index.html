@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-v4-rtl/4.6.0-3/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="demat.css">
+</head>
+
+<body>
+    <header class="bg-white shadow-sm py-2">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.jpg" alt="Logo" class="nav-logo"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Brokerage Calculator</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">
+                    Subscription Plan</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">
+                    FAQs</a>
+                </li>
+              </ul>
+            </div>
+            <a  href="javascript:void(0)" class="bg-primary text-white px-3 py-2 text-uppercase rounded-pill openAccountTopButton">Open Account</a>
+
+          </nav>
+    </header>
+    <section class="banner-section">
+        <div class="row container-fluid mx-auto">
+            <div class="col-lg-7 col-xl-7 ">
+                <div class="banner-content">
+                    <h1 class="banner-title mb-2">
+                        Open Free Demat & Trading Account
+                    </h1>
+                    <h2 class="banner-subtitle mb-3">Get one of the lowest* brokerage rates
+                    </h2>
+                    <ul class="banner-list  ">
+                        <li class="banner-list-item pl-4">100% digital process</li>
+                        <li class="banner-list-item pl-4">Secure trading platform</li>
+                        <li class="banner-list-item pl-4">Affordable subscription packs</li>
+                        <li class="banner-list-item pl-4">Invest in multiple products</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-5 p-0">
+                <div class="banner-right mt-5 shadow bg-white">
+                    <div class="form-wrapper">
+                        <h2 class="form-title text-black text-uppercase">Open your account Within 10 minutes</h2>
+                        <form >
+                            <input  placeholder="Mobile Number *" autocomplete="off" class="p-2 mb-4">  
+                           
+                            <div class="form-check d-flex align-item-stretch">
+                                <input class="form-check-input position-static mr-1" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                <p>By continuing, I confirm that I have read and agree
+                                    to the Terms & Conditions and Privacy Policy
+                                </p>  
+                              </div>  
+                           
+                              <button type="button" class="btn btn-primary btn-lg btn-block mb-5">Continue</button>
+
+
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="brokerage">
+    <div class="container-fluid p-4">
+        <h3 class="font-weight-bold mb-3">Save big on brokerage with BFSL
+        </h3>
+        <div class="shadow p-4 row">
+            <div class="col-md-6 d-flex justify-content-center flex-wrap gap-10 my-2">
+                <span class="d-inline-block bold font-weight-bold">In a month I do</span>
+                <select id="month" class="rounded-pill">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+            
+                    </select>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center flex-wrap gap-10 my-2"> <span class="d-inline-block bold font-weight-bold">trades in
+            </span>
+                <select id="trade" class="rounded-pill">
+                    <option>Cash</option>
+                    <option>Intraday</option>
+                    <option>F&O</option>
+            
+                    </select></div>
+
+        </div>
+    </div>
+    <div class="container-fluid p-4">
+        <div class="annual p-4">
+            <h4 class="mb-4"> Your annual brokerage amount will be
+            </h4>
+            <div class="row mb-4">
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="annual-card shadow">
+                        <h2>₹ 60
+                        </h2>
+                        <h3>BFSL
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="annual-card shadow">
+                        <h2>₹ 6000
+
+                        </h2>
+                        <h3>Traditional Broker
+
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="annual-card  bg-primary ">
+                        <h2 class="text-white">₹ 5940
+                        </h2>
+                        <h3 class="text-white">Annual Savings
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+            <p>Brokerage has been calculated considering each trade of value Rs. 1 lakh. Brokerage for traditional brokers has been taken as: Cash: 0.50%, Intraday: 0.05%, & F&O: 0.05%. BFSL brokerage has been calculated as per Bajaj Previlage Club pack</p>
+        </div>
+    </div>
+</section>
+<section class="subscription">
+    <div class="container-fluid pt-5 pb-3">
+        <h3 class="mb-5 font-weight-bold">Choose your brokerage with our Annual Subscription Packs
+        </h3>
+        <div class="d-flex justify-content-center gap-20 flex-wrap mb-3">
+            <div class="subscription-card  shadow-lg">
+                <div class="card-header bg-primary pt-5">
+                    <h5 class="text-center text-uppercase">Freedom <br> Pack</h5>
+                    <p class="d-block text-center font-weight-bold mb-3">
+                       ₹0.10%</br>
+                       <span>Equity Delievery</span>
+                      
+                    </p>
+                    <p class="d-block text-center font-weight-bold mb-3">
+                        ₹17 <span>/order</span>
+                        <span class="font-weight-normald d-block">Equity Intraday & F&O</span>    
+                     </p>
+                     <p class="d-block text-center font-weight-bold mb-3">
+                        18% <span>per annum</span>
+                        <span class="font-weight-normald d-block">MTF</span>    
+
+                     </p>
+                </div>
+                <div class="card-body p-3 text-center">
+                    <span class="font-16">Yearly Subscription Charges:</span>
+                    <p class="text-dark font-18">1st yr: Free*,<br>2nd yr Onwards: ₹431
+                    </p>
+
+                    <span class="font-16">Demat AMC:
+                    </span>
+                    <p class="text-dark font-18">Free
+                    </p>
+                    <span class="font-16">Products included
+
+                    </span>
+                    <p class="text-dark font-18">Equity
+                        Derivative
+                    </p>
+
+                    <span class="font-16 text-primary">Total Payable
+
+
+                    </span>
+                    <p class="text-primary font-24">₹0
+
+                    </p>
+                </div>
+            </div>
+            <div class="subscription-card shadow-lg">
+                <div class="card-header bg-primary pt-5">
+                    <h5 class="text-center text-uppercase">Professional <br> Pack</h5>
+                 
+                    <p class="d-block text-center font-weight-bold mb-3">
+                        ₹10<span>/order</span>
+                        <span class="font-weight-normald d-block">Delivery, <br>Intraday & F&O</span>    
+                     </p>
+                     <p class="d-block text-center font-weight-bold mb-3">
+                        12% <span>per annum</span>
+                        <span class="font-weight-normald d-block">MTF</span>    
+
+                     </p>
+                </div>
+                <div class="card-body p-3 text-center">
+                    <span class="font-16">Yearly Subscription Charges:</span>
+                    <p class="text-dark font-18">₹2500
+                    </p>
+
+                    <span class="font-16">Demat AMC:
+                    </span>
+                    <p class="text-dark font-18">Free
+                    </p>
+                    <span class="font-16">Products included
+
+                    </span>
+                    <p class="text-dark font-18">Equity
+                        Derivative
+                    </p>
+
+                    <span class="font-16 text-primary">Total Payable
+
+
+                    </span>
+                    <p class="text-primary font-24">₹2500
+
+                    </p>
+                </div>
+            </div>
+            <div class="subscription-card  shadow-lg">
+                <div class="card-header bg-primary pt-5">
+                    <h5 class="text-center text-uppercase">Bajaj Privilege<br> Club</h5>
+                 
+                    <p class="d-block text-center font-weight-bold mb-3">
+                        ₹5<span>/order</span>
+                        <span class="font-weight-normald d-block">Delivery, <br>Intraday & F&O</span>    
+                     </p>
+                     <p class="d-block text-center font-weight-bold mb-3">
+                        <span> One of the Lowest <br> MTF Interest Rates </span>
+                       
+
+                     </p>
+                </div>
+                <div class="card-body p-3 text-center">
+                    <span class="font-16">Yearly Subscription Charges:</span>
+                    <p class="text-dark font-18">₹9,999
+                    </p>
+
+                    <span class="font-16">Demat AMC:
+                    </span>
+                    <p class="text-dark font-18">Free
+                    </p>
+                    <span class="font-16">Products included
+
+                    </span>
+                    <p class="text-dark font-18">Equity
+                        Derivative
+                    </p>
+
+                    <span class="font-16 text-primary">Total Payable
+
+
+                    </span>
+                    <p class="text-primary font-24">₹9,999
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <p class="text-center text-primary font-18 mb-0">Yearly Subscription charges are non-refundable** and inclusive of taxes
+        </p>
+    </div>
+</section>
+    
+
+<section class="account">
+    <div class="container-fluid py-5">
+        <h3 class="mb-4 font-weight-bold">Open your Account in 3 easy steps</h3>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 p-3 d-flex flex-column align-items-center account-card"><div class="account-img mb-4"style="background-image: url(./assets/images/account-type-image.jpg); background-repeat: no-repeat"></div>
+        <p class="font-18 text-center font-weight-bold">Fill personal details like Name, Mobile no., Address and PAN no.</p></div>
+            <div class="col-md-6 col-lg-4 p-3 d-flex flex-column align-items-center account-card"><div class="account-img mb-4"style="background-image: url(./assets/images/account-type-image.jpg); background-repeat: no-repeat;background-position: -116px 0;"></div> <p class="font-18 text-center font-weight-bold">Fill personal details like Name, Mobile no., Address and PAN no.</p></div>
+            <div class="col-md-6 col-lg-4 p-3 d-flex flex-column align-items-center account-card "><div class="account-img mb-4"style="background-image: url(./assets/images/account-type-image.jpg); background-repeat: no-repeat;background-position: -215px 0;"></div> <p class="font-18 text-center font-weight-bold">Fill personal details like Name, Mobile no., Address and PAN no.</p></div>
+
+        </div>
+
+    </div>
+</section>
+<section class="trading py-5">
+    <div class="container-fluid row mx-auto">
+        <div class="col-md-4 d-flex  flex-column md:align-items-center"> <h3 class="mb-3 font-weight-bold">Secure Trading App</h3>
+            <h4 class="font-18 mb-5">Trade on the go with our
+                mobile trading app</h4>
+                <div class="d-flex gap-20 flex-wrap">
+                    <a href="#"><img src="./assets/images/google_play.png" alt=""></a>
+                    <a href="#"><img src="./assets/images/app_store.png" alt=""></a>
+    
+                </div></div>
+       <div class="col-md-8 trading-img"></div>
+    </div>
+</section>
+
+
+<section class="questions">
+    <div class="container-fluid py-4">
+        <h3 class="mb-4 font-weight-bold">FREQUENTLY ASKED QUESTIONS
+        </h3>
+        <div id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-group">
+                    <div class="panel-heading shadow-sm p-3 ">
+                        <h4 class="panel-title pr-5 mb-3">
+                            <a role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="fa fa-minus"></span>
+                                <span class="d-flex flex-row"><span class="faq-title"> Why should you choose Bajaj Financial Securities Limited?</span></span>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show p-3" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="panel-body">
+                            <div class="group">
+                                <ul>
+                                    <li>Paperless account opening process</li>
+                                    <li>Trade in multiple products</li>
+                                    <li>Seamless trading on web and app</li>
+                                    <li>Affordable packs with value for money</li>
+                                    <li>Trust of Bajaj Finserv</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-group">
+                    <div class="panel-heading shadow-sm p-3">
+                        <h4 class="panel-title pr-5">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <span class="fa fa-minus"></span>
+                                <span class="d-flex flex-row"><span class="faq-title">What are the Documents required?</span> </span>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse p-3" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="panel-body">
+                            <div class="group">
+                                <p>For opening a Demat & Trading Account online with Bajaj Financial Securities Limited, you will need the soft copies of below documents</p>
+
+                                <p><b>Identity Proof:</b> PAN Card</p>
+
+                                <p><b>Address Proof:</b> Any one: Passport, driving licence, voter ID, Aadhaar card or last 3 month bank statement</p>
+
+                                <p><b>Photo</b></p>
+
+                                <p><b>Signature on white paper</b></p>
+
+                                <p><b>Bank details -</b> Cancelled cheque, bank statement with IFSC code and bank account no.</p>
+
+                                <p><b>Income proof -</b> for F&O trading (Any one: 6-month bank statement, 3 month salary slip, Net-worth certificate, Holding report, ITR statement or Demat holding statement)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-group">
+                    <div class="panel-heading shadow-sm p-3">
+                        <h4 class="panel-title pr-5">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                <span class="fa fa-minus"></span>
+                                <span class="d-flex flex-row"><span class="faq-title">How much time does it take to open account?</span></span>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapseThree" class="collapse p-3" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="panel-body">
+                            <div class="group">
+                                <p class="mb-0">
+                                    The account opening process is simple, and you can complete it in less than 10 minutes. Keep your PAN card, address proof, and bank details handy.  With our easy on-boarding process, you can open your Demat Account and start trading in stock market.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-group">
+                    <div class="panel-heading shadow-sm p-3">
+                        <h4 class="panel-title pr-5">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                <span class="fa fa-minus"></span>
+                                <span class="d-flex flex-row"><span class="faq-title">How can I trade after opening an account?</span></span>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapseFour" class="collapse p-3" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="panel-body">
+                            <div class="group">
+                                <p><b>Log in -</b> Once your account is opened, you will receive login credentials to log in and access the trading platform.</p>
+                                <p><b>Add funds -</b> The bank details you provided during sign-up will be linked to your trading account. Just add funds to your account to get started with trading.</p>
+                                <p>
+                                    <b>View stock details and trade –</b> Create Watchlist of your preferred companies, view in-depth details of shares and buy the shares with the ease of a swipe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-group">
+                    <div class="panel-heading shadow-sm p-3">
+                        <h4 class="panel-title pr-5">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                <span class="fa fa-minus"></span>
+                                <span class="d-flex flex-row"><span class="faq-title">What are the eligibility criteria for opening online Demat & Trading Account?</span></span>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapseFive" class="collapse p-3" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="panel-body">
+                            <div class="group">
+                                <p class="mb-0">
+                                    Any Indian individual above the age of 18 years can open an online Demat & Trading Account with BFSL. It is mandatory to have a PAN card, a bank account, and documents for identity and address proof.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-group">
+                    <div class="panel-heading shadow-sm p-3">
+                        <h4 class="panel-title pr-5">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                <span class="fa fa-minus"></span>
+                                <span class="d-flex flex-row"><span class="faq-title">What are the steps to open Demat and Trading Account?</span></span>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapseSix" class="collapse p-3" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="panel-body">
+                            <div class="group">
+                                <ul>
+                                    <li>Provide your personal & bank details</li>
+                                    <li>Choose Subscription Plan</li>
+                                    <li>Perform In-person verification online</li>
+                                    <li>Upload Documents</li>
+                                    <li>E-sign through Aadhar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+
+<footer>
+    <div class="container-fluid py-4">
+        <h3 class="mb-4 font-weight-bold">About Bajaj Financial Securities Limited</h3>
+        <p>
+            Bajaj Financial Securities Limited (BFSL) is a 100% subsidiary of Bajaj Finance Limited. We offer a wide spectrum of Capital Market Solutions covering Equities, Mutual funds, Corporate deposits, Bonds, Insurance, Loans & Distribution offering to Corporates, High-net-worth individuals and families. Bajaj Financial Securities Limited is a registered member of NSE & BSE for Equities & Derivative Segment and a depository participant with CDSL & NSDL.
+        </p>
+    </div>
+</footer>
+
+
+
+
+<span class="fa fa-hashtag"></span>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-v4-rtl/4.6.0-3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

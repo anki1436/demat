@@ -1,0 +1,347 @@
+/* reseting Structure */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+.container-fluid {
+    max-width: 1120px;
+}
+.container-fluid h3{
+ font-size: 22px;
+}
+
+.gap-10{
+    gap:10px;
+}
+.gap-20{
+    gap: 20px;
+}
+.font-16{
+font-size: 16px;
+}
+.font-18{
+    font-size: 18px;
+    }
+    .font-24{
+        font-size: 24px;
+        }
+/* header */
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    min-height: 70px;
+}
+.navbar {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.nav-logo {
+    width: 140px;
+    object-fit: contain;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-collapse {
+    justify-content: end;
+    padding-right: 3rem;
+    font-size: 18px;
+
+}
+.navbar-light .navbar-nav .active:after {
+    content: "";
+    display: block;
+    width: 50%;
+    padding-top: 10px;
+    border-bottom: 2px solid #1579f6;
+}
+.navbar-nav {
+    gap: 45px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.nav-link {
+    padding: 0 !important;
+}
+.openAccountTopButton {
+    font-weight: 700;
+}
+/* banner section */
+.banner-section {
+    background: url("./assets/images/banner.jpg");
+    /* linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), */
+    background-size: cover;
+    background-position: right;
+    min-height: 600px;
+    min-height: 600px;
+    display: flex;
+    align-items: baseline;
+}
+
+.banner-section .row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.banner-title {
+    font-size: 30px;
+    width: 25ch;
+    color: #1579f6;
+
+}
+.banner-subtitle {
+    font-size: 22px;
+    color: black;
+}
+.banner-list-item {
+    font-size: 20px;
+    line-height: 40px;
+    position: relative;
+}
+.banner-list-item::before {
+    content: "";
+    border: 1px solid #212529;
+    width: 13px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.banner-right {
+    max-width: 380px;
+    margin-left: auto;
+}
+.form-wrapper {
+    padding: 18px;
+}
+.form-wrapper .form-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+.form-wrapper input,
+.form-wrapper input:focus-visible {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+form span {
+    font-size: 14px;
+    line-height: 24px;
+}
+.form-check-input {
+    width: auto !important;
+}
+.form-check p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* brokerage */
+.brokerage span{
+    font-size: 18px;
+}
+.brokerage select{
+    text-align: center;
+width: 100%;}
+.annual-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.annual p{
+    font-size: 16px;
+    color: #ababab;
+    margin-bottom: 16px;
+}
+
+/* subscription section */
+.subscription{
+    background-color: #f4f5f8;
+}
+.subscription-card{
+    max-width: 350px;
+    min-width: 280px;
+    color: white;
+    justify-content: center;
+    border-radius: 15px;
+    border-radius: 10px;
+
+}
+.subscription-card .card-header{
+    min-height: 400px;
+    border-radius: 10px 10px 0 0;
+
+}
+.subscription-card h5{
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+.subscription-card h5::after{
+    content: "";
+    display: block;
+    width: 20%;
+    padding-top: 15px;
+    margin: 0px auto;
+    border-bottom: 2px solid #fff;
+}
+.subscription-card .card-header p{
+    font-size: 28px;
+    line-height: 1;
+}
+.subscription-card p span{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.subscription-card .card-body{
+    color: #6b7085;
+    font-size: 18px;
+}
+ /* account */
+ .account-img{
+    height: 77px;
+    width: 90px;
+ }
+ .account-card{
+    max-width: 400px;
+    margin: 0 auto;
+ }
+ .account-card:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+ }
+ .account p{
+    line-height: 1.5;
+    max-width: 300px;
+    margin-left:auto ;
+    margin-right: auto;
+ }
+
+ /* trading */
+ .trading .trading-img{
+    max-height: 500px;
+    background-image: url(./assets/images/downloadApp.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    min-height: 400px;
+ }
+ .trading h4{
+    max-width: 210px;
+ }
+ .trading img{
+    height: 40px;
+ }
+
+ .questions .group ul li{
+    
+        list-style: disc;
+        list-style-position: inside;
+ }
+ .panel{
+    margin-bottom: 15px;
+ }
+ .panel-heading{
+    position: relative;
+ }
+ .panel-heading::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-family: var(--fa-style-family,"Font Awesome 6 Free");
+    font-weight: var(--fa-style,900);
+    /* fill: var(--primary); */
+    color: var(--primary);
+    /* background: var(--primary); */
+ }
+ .fa-minus{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    color:var(--primary);
+    font-weight: bold;
+
+ }
+ [data-toggle="collapse"].collapsed .fa-minus:before {
+    content: "\2b";
+}
+.faq-title{
+    font-size: 20px;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: var(--white);
+}
+@media screen and (max-width:991px) {
+    .navbar-light .navbar-nav .active:after {
+        content: "";
+        width: 10%;
+    }
+    .navbar-nav {
+        padding: 50px 0;
+        gap: 15px;
+    }
+    .openAccountTopButton {
+        display: none;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 999;
+        padding-right: unset;
+        padding-left: 30px;
+    }
+    .banner-title {
+        width: 90%;
+        font-size: 24px;
+    }
+    .banner-subtitle {
+        font-size: 20px;
+    }
+    .banner-list-item {
+        font-size: 18px;
+    }
+    .banner-section {
+        background-position: left bottom;
+    }
+    .trading .trading-img{
+        
+        min-height: 350px;
+     }
+     .faq-title{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:575px) {
+    .trading .trading-img{
+        
+        min-height: 220px;
+     }
+     .faq-title{
+        font-size: 15px;
+    }
+}
